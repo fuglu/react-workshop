@@ -2,6 +2,10 @@ import React from 'react';
 
 export default class IndexContainer extends React.Component {
 	render() {
-		return null;
+		return (
+			<div>
+				Hello world
+			</div>
+		);
 	}
 }
