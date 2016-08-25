@@ -12,22 +12,27 @@ const style = {
 };
 
 export default class IndexContainer extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			numbers: [
+				'0211-123456',
+				'0211-123457',
+				'0211-123458',
+				'0211-123459',
+			],
+		};
+	}
+
 	render() {
 		return (
 			<div style={style}>
 				<List>
-					<ListItem
-						text={'0211-123456'}
-					/>
-					<ListItem
-						text={'0211-123457'}
-					/>
-					<ListItem
-						text={'0211-123458'}
-					/>
-					<ListItem
-						text={'0211-123459'}
-					/>
+					{this.state.numbers.map(number => (
+						<ListItem
+							text={number}
+						/>
+					))}
 				</List>
 			</div>
 		);
