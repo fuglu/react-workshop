@@ -28,10 +28,11 @@ export default class IndexContainer extends React.Component {
 		return (
 			<div style={style}>
 				<List>
-					{this.state.numbers.map(number => (
+					{this.state.numbers.map((number, index) => (
 						<ListItem
 							key={number.id}
 							text={number.localized}
+							isFirstItem={index === 0}
 						/>
 					))}
 				</List>
