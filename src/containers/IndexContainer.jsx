@@ -12,7 +12,18 @@ export default class IndexContainer extends React.Component {
 	render() {
 		return (
 			<div style={style}>
-				Hello world
+				<div>
+					0211-123456
+				</div>
+				<div>
+					0211-123457
+				</div>
+				<div>
+					0211-123458
+				</div>
+				<div>
+					0211-123459
+				</div>
 			</div>
 		);
 	}
