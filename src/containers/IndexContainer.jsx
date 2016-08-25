@@ -16,10 +16,10 @@ export default class IndexContainer extends React.Component {
 		super(props);
 		this.state = {
 			numbers: [
-				'0211-123456',
-				'0211-123457',
-				'0211-123458',
-				'0211-123459',
+				{ id: 1, localized: '0211-123456' },
+				{ id: 2, localized: '0211-123457' },
+				{ id: 3, localized: '0211-123458' },
+				{ id: 4, localized: '0211-123459' },
 			],
 		};
 	}
@@ -30,7 +30,8 @@ export default class IndexContainer extends React.Component {
 				<List>
 					{this.state.numbers.map(number => (
 						<ListItem
-							text={number}
+							key={number.id}
+							text={number.localized}
 						/>
 					))}
 				</List>
