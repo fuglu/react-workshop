@@ -33,6 +33,9 @@ export default class IndexContainer extends React.Component {
 							key={number.id}
 							text={number.localized}
 							isFirstItem={index === 0}
+							style={{
+								background: index % 2 ? '#eee' : '#fff',
+							}}
 						/>
 					))}
 				</List>

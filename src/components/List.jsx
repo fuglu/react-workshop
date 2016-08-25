@@ -3,6 +3,7 @@ import React from 'react';
 const listStyle = {
 	border: '1px solid #ccc',
 	borderRadius: '10px',
+	overflow: 'hidden',
 };
 
 export default class List extends React.Component {
