@@ -24,6 +24,10 @@ export default class IndexContainer extends React.Component {
 		};
 	}
 
+	onClick = () => {
+		console.log('Button clicked');
+	};
+
 	render() {
 		return (
 			<div style={style}>
@@ -39,6 +43,7 @@ export default class IndexContainer extends React.Component {
 						/>
 					))}
 				</List>
+				<button onClick={this.onClick}>Click me</button>
 			</div>
 		);
 	}
