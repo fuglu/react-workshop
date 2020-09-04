@@ -42,7 +42,7 @@
     "karma-sinon": "^1.0.5",
     "karma-webpack": "^1.8.0",
     "mocha": "^3.0.2",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.14.1",
     "normalize.css": "^4.2.0",
     "phantomjs-prebuilt": "^2.1.12",
     "react": "^15.3.1",
